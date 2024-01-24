@@ -1,0 +1,475 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block title%}
+<title>Services</title>
+{%endblock%}
+{%block content%}
+<br><br><br><br><br>
+    <!-- ======= Why Us Section ======= -->
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="why-box">
+              <h3 style="color: white;">Nega aynan biz?</h3>
+              <p style="color: white;">
+                Bizning restoran 1996 yilda tashkil qilingan va shu paytga qadar mijozlarga uzluksiz hizmat ko'rsatib kelmoqdamiz.
+                Bundan tashqari bizning restoran 150 ga yaqin doimiy va 300 ga yaqin kunlik mijozlarni qabul qiladi.
+              </p>
+              <div class="text-center">
+                <a href="#about" class="more-btn">Batafsil <i class="bx bx-chevron-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Why Box -->
+
+          <div class="col-lg-8 d-flex align-items-center">
+            <div class="row gy-4">
+
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-clipboard-data"></i>
+                  <h4>Qoniqarli xizmat ko'rsatish</h4>
+                  <p>Hodimlarimiz yuqori malakali bo'libgina qolmay hushmuomala hamdir va bu bizning restoranni muhim odatlaridan biri xisoblanadi</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-gem"></i>
+                  <h4>Yuqori sifatli Mahsulotlar</h4>
+                  <p>Taomlar tarkibidagi barcha maxsulotlar foydalanishdan avval bir necha labaratorik tekshiruvdan o'tkaziladi, shu bilan birga bizdagi hamm mahsultlar 100% organik</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-inboxes"></i>
+                  <h4>Sokin Muhit</h4>
+                  <p>Restoranimizda sokinlik muhiti mavjud, chunki binoga eng yaqin mashina yo'li 300 metr uzoqlikda joylashgan va bu insonga yoqimli tinchlik hissini baxsh etadi.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    
+    <!-- ======= Menu Section ======= -->
+    <br>
+    <section id="menu" class="menu">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Bizning Menyu</h2>
+          <br>
+          <p><span>Elysium Menu</span>ni Ko'zdan kechirish</p>
+        </div>
+
+        <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+          <li class="nav-item">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters">
+              <h4>Barcha taomlar</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
+              <h4>Nonushta</h4>
+            </a><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-lunch">
+              <h4>Tushlik</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-dinner">
+              <h4>Kechki ovqat</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+        </ul>
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+
+          <div class="tab-pane fade active show" id="menu-starters">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Barcha taomlar</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="{%static 'assets/img/menu/menu-item-1.png'%}" class="glightbox"><img src="{%static 'assets/img/menu/menu-item-1.png'%}" class="menu-img img-fluid" alt=""></a>
+                <h4>Magnam Tiste</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $5.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{%static 'assets/img/menu/menu-item-2.png'%}" class="glightbox"><img src="{%static 'assets/img/menu/menu-item-2.png'%}" class="menu-img img-fluid" alt=""></a>
+                <h4>Aut Luia</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $14.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{%static 'assets/img/menu/menu-item-3.png'%}" class="glightbox"><img src="{%static 'assets/img/menu/menu-item-3.png'%}" class="menu-img img-fluid" alt=""></a>
+                <h4>Est Eligendi</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $8.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{%static 'assets/img/menu/menu-item-4.png'%}" class="glightbox"><img src="{%static 'assets/img/menu/menu-item-4.png'%}" class="menu-img img-fluid" alt=""></a>
+                <h4>Eos Luibusdam</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $12.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{%static 'assets/img/menu/menu-item-5.png'%}" class="glightbox"><img src="{%static 'assets/img/menu/menu-item-5.png'%}" class="menu-img img-fluid" alt=""></a>
+                <h4>Eos Luibusdam</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $12.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{%static 'assets/img/menu/menu-item-6.png'%}" class="glightbox"><img src="{%static 'assets/img/menu/menu-item-6.png'%}" class="menu-img img-fluid" alt=""></a>
+                <h4>Laboriosam Direva</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $9.95
+                </p>
+              </div><!-- Menu Item -->
+              
+              {%for food in foods%}
+              <div class="col-lg-4 menu-item">
+                <a href="{{food.img.url}}" class="glightbox"><img src="{{food.img.url}}" class="menu-img img-fluid" alt=""></a>
+                <h4>{{food.name}}</h4>
+                <p class="ingredients">
+                  {{food.ingridients}}
+                </p>
+                <p class="price">
+                  ${{food.price}}
+                </p>
+              </div><!-- Menu Item -->
+              {%endfor%}
+
+            </div>
+          </div><!-- End Starter Menu Content -->
+
+          <div class="tab-pane fade" id="menu-breakfast">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Nonushta</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="{%static 'assets/img/menu/menu-item-1.png'%}" class="glightbox"><img src="{%static 'assets/img/menu/menu-item-1.png'%}" class="menu-img img-fluid" alt=""></a>
+                <h4>Magnam Tiste</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $5.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{%static 'assets/img/menu/menu-item-2.png'%}" class="glightbox"><img src="{%static 'assets/img/menu/menu-item-2.png'%}" class="menu-img img-fluid" alt=""></a>
+                <h4>Aut Luia</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $14.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{%static 'assets/img/menu/menu-item-3.png'%}" class="glightbox"><img src="{%static 'assets/img/menu/menu-item-3.png'%}" class="menu-img img-fluid" alt=""></a>
+                <h4>Est Eligendi</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $8.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{%static 'assets/img/menu/menu-item-4.png'%}" class="glightbox"><img src="{%static 'assets/img/menu/menu-item-4.png'%}" class="menu-img img-fluid" alt=""></a>
+                <h4>Eos Luibusdam</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $12.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{%static 'assets/img/menu/menu-item-5.png'%}" class="glightbox"><img src="{%static 'assets/img/menu/menu-item-5.png'%}" class="menu-img img-fluid" alt=""></a>
+                <h4>Eos Luibusdam</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $12.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{%static 'assets/img/menu/menu-item-6.png'%}" class="glightbox"><img src="{%static 'assets/img/menu/menu-item-6.png'%}" class="menu-img img-fluid" alt=""></a>
+                <h4>Laboriosam Direva</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $9.95
+                </p>
+              </div><!-- Menu Item -->
+              {%for food in foods%}
+              {%if food.meal_time == 1%}
+            <div class="col-lg-4 menu-item">
+              <a href="{{food.img.url}}" class="glightbox"><img src="{{food.img.url}}" class="menu-img img-fluid" alt=""></a>
+              <h4>{{food.name}}</h4>
+              <p class="ingredients">
+                {{food.ingridients}}
+              </p>
+              <p class="price">
+                ${{food.price}}
+              </p>
+            </div><!-- Menu Item -->
+            {%endif%}
+            {%endfor%}
+
+            </div>
+          </div><!-- End Breakfast Menu Content -->
+
+          <div class="tab-pane fade" id="menu-lunch">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Tushlik</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="{%static 'assets/img/menu/menu-item-1.png'%}" class="glightbox"><img src="{%static 'assets/img/menu/menu-item-1.png'%}" class="menu-img img-fluid" alt=""></a>
+                <h4>Magnam Tiste</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $5.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{%static 'assets/img/menu/menu-item-2.png'%}" class="glightbox"><img src="{%static 'assets/img/menu/menu-item-2.png'%}" class="menu-img img-fluid" alt=""></a>
+                <h4>Aut Luia</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $14.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{%static 'assets/img/menu/menu-item-3.png'%}" class="glightbox"><img src="{%static 'assets/img/menu/menu-item-3.png'%}" class="menu-img img-fluid" alt=""></a>
+                <h4>Est Eligendi</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $8.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{%static 'assets/img/menu/menu-item-4.png'%}" class="glightbox"><img src="{%static 'assets/img/menu/menu-item-4.png'%}" class="menu-img img-fluid" alt=""></a>
+                <h4>Eos Luibusdam</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $12.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{%static 'assets/img/menu/menu-item-5.png'%}" class="glightbox"><img src="{%static 'assets/img/menu/menu-item-5.png'%}" class="menu-img img-fluid" alt=""></a>
+                <h4>Eos Luibusdam</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $12.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{%static 'assets/img/menu/menu-item-6.png'%}" class="glightbox"><img src="{%static 'assets/img/menu/menu-item-6.png'%}" class="menu-img img-fluid" alt=""></a>
+                <h4>Laboriosam Direva</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $9.95
+                </p>
+              </div><!-- Menu Item -->
+              {%for food in foods%}
+              {%if food.meal_time == 2%}
+            <div class="col-lg-4 menu-item">
+              <a href="{{food.img.url}}" class="glightbox"><img src="{{food.img.url}}" class="menu-img img-fluid" alt=""></a>
+              <h4>{{food.name}}</h4>
+              <p class="ingredients">
+                {{food.ingridients}}
+              </p>
+              <p class="price">
+                ${{food.price}}
+              </p>
+            </div><!-- Menu Item -->
+            {%endif%}
+            {%endfor%}
+
+            </div>
+          </div><!-- End Lunch Menu Content -->
+
+          <div class="tab-pane fade" id="menu-dinner">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Kechki ovqat</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="{%static 'assets/img/menu/menu-item-1.png'%}" class="glightbox"><img src="{%static 'assets/img/menu/menu-item-1.png'%}" class="menu-img img-fluid" alt=""></a>
+                <h4>Magnam Tiste</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $5.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{%static 'assets/img/menu/menu-item-2.png'%}" class="glightbox"><img src="{%static 'assets/img/menu/menu-item-2.png'%}" class="menu-img img-fluid" alt=""></a>
+                <h4>Aut Luia</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $14.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{%static 'assets/img/menu/menu-item-3.png'%}" class="glightbox"><img src="{%static 'assets/img/menu/menu-item-3.png'%}" class="menu-img img-fluid" alt=""></a>
+                <h4>Est Eligendi</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $8.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{%static 'assets/img/menu/menu-item-4.png'%}" class="glightbox"><img src="{%static 'assets/img/menu/menu-item-4.png'%}" class="menu-img img-fluid" alt=""></a>
+                <h4>Eos Luibusdam</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $12.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{%static 'assets/img/menu/menu-item-5.png'%}" class="glightbox"><img src="{%static 'assets/img/menu/menu-item-5.png'%}" class="menu-img img-fluid" alt=""></a>
+                <h4>Eos Luibusdam</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $12.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{%static 'assets/img/menu/menu-item-6.png'%}" class="glightbox"><img src="{%static 'assets/img/menu/menu-item-6.png'%}" class="menu-img img-fluid" alt=""></a>
+                <h4>Laboriosam Direva</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $9.95
+                </p>
+              </div><!-- Menu Item -->
+              {%for food in foods%}
+              {%if food.meal_time == 3%}
+            <div class="col-lg-4 menu-item">
+              <a href="{{food.img.url}}" class="glightbox"><img src="{{food.img.url}}" class="menu-img img-fluid" alt=""></a>
+              <h4>{{food.name}}</h4>
+              <p class="ingredients">
+                ${{food.ingridients}}
+              </p>
+              <p class="price">
+                $9.95
+              </p>
+            </div><!-- Menu Item -->
+            {%endif%}
+            {%endfor%}
+
+            </div>
+          </div><!-- End Dinner Menu Content -->
+
+        </div>
+
+      </div>
+    </section><!-- End Menu Section -->
+{%endblock%}

@@ -1,0 +1,509 @@
+
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Elysium | Main</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{%static 'assets/img/favicon.png'%}" rel="icon">
+  <link href="{%static 'assets/img/apple-touch-icon.png'%}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="{% static 'front/css/bootstrap.min.css'%}">
+  <link rel="stylesheet" href="{% static 'front/css/owl.carousel.min.css'%}">
+  <link rel="stylesheet" href="{% static 'front/css/slicknav.css'%}">
+  <link rel="stylesheet" href="{% static 'front/css/animate.min.css'%}">
+  <link rel="stylesheet" href="{% static 'front/css/magnific-popup.css'%}">
+  <link rel="stylesheet" href="{% static 'front/css/fontawesome-all.min.css'%}">
+  <link rel="stylesheet" href="{% static 'front/css/themify-icons.css'%}">
+  <link rel="stylesheet" href="{% static 'front/css/flaticon.css'%}">
+  <link rel="stylesheet" href="{% static 'front/css/slick.css'%}">
+  <link rel="stylesheet" href="{% static 'front/css/nice-select.css'%}">
+  <link rel="stylesheet" href="{% static 'front/css/style.css'%}">
+  <link rel="stylesheet" href="{% static 'front/css/responsive.css'%}">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/main.css'%}" rel="stylesheet">
+  <style>
+    #a{
+      background-image: url("{%static 'assets/img/events-1.jpg'%}")
+    }
+    #b{
+      background-image: url("{%static 'assets/img/events-2.jpg'%}")
+    }
+    #c{
+      background-image: url("{%static 'assets/img/events-3.jpg'%}")
+    }
+    .reservation-img{
+      background-image: url("{%static 'assets/img/reservation.jpg'%}");
+    }
+    .about-img{
+      background-image: url("{%static 'assets/img/about.jpg'%}") ;
+    }
+  </style>
+
+  <!-- =======================================================
+  * Template Name: Elysium
+  * Updated: Jan 09 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="{%url 'main'%}" class="logo d-flex align-items-center me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>Elysium<span>.</span></h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#hero">Bosh sahifa</a></li>
+          <li><a href="{%url 'service'%}">Xizmatlar</a></li>
+          <li><a href="{%url 'blog'%}">Bloglar</a></li>
+          <li><a href="{%url 'contact'%}">Bog'lanish</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+      <a class="btn-book-a-table" href="#book-a-table">Stol buyurtirish</a>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center section-bg">
+    <div class="container">
+      <div class="row justify-content-between gy-5">
+        <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+          <h2 data-aos="fade-up">Haqiqiy Sog'lom taomni<br>tatib ko'ring</h2>
+          <p data-aos="fade-up" data-aos-delay="100">Bizda tayyorlanadigan barcha taomlar sog'lom va kam kaloriyaga ega. Bundan tashqari Luxury uslubidagi restoran sizga manzur kelishiga ishonchinmiz komil.</p>
+          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            <a href="#book-a-table" class="btn-book-a-table">Stol buyurtirish</a>
+           </div>
+        </div>
+        <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
+          <img src="{%static 'assets/img/hero-img.png'%}" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Biz haqimizda</h2>
+          <br>
+          <p>Restoranimiz haqida <span>O'qing</span></p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-7 position-relative about-img"  data-aos="fade-up" data-aos-delay="150">
+            <div class="call-us position-absolute">
+              <h4>Stol buyurtirish</h4>
+              <p>+1 5589 55488 55</p>
+            </div>
+          </div>
+          <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
+            <div class="content ps-0 ps-lg-5">
+              <p class="fst-italic">
+                Bizning restoran 1996 yilda tashkil qilingan va shu paytga qadar mijozlarga uzluksiz hizmat ko'rsatib kelmoqdamiz.
+                Bundan tashqari bizning restoran 150 ga yaqin doimiy va 300 ga yaqin kunlik mijozlarni qabul qiladi. Shuningdek:
+              </p>
+              <ul>
+                <li><i class="bi bi-check2-all"></i> Barcha maxsulotlarimiz jahon standartlari bilan mos.</li>
+                <li><i class="bi bi-check2-all"></i> Restoranimiz estetik va zamonaviy dizaynga ega.</li>
+                <li><i class="bi bi-check2-all"></i> Doimiy mijozlar uchun keng ko'lamdagi imtiyozlar</li>
+              </ul>
+              <p>
+                Qo'shimcha qilib aytadigan bo'lsak, Restoranimiz o'z faoliyati davomida mamlakat miqiyosida 3 marotaba "Eng yaxshi restoran" nomini olgan
+              </p>
+
+              <div class="position-relative mt-4">
+                <img src="{%static 'assets/img/about-2.jpg'%}" class="img-fluid" alt="">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="why-box">
+              <h3 style="color: white;">Nega aynan biz?</h3>
+              <p style="color: white;">
+                Bizning restoran 1996 yilda tashkil qilingan va shu paytga qadar mijozlarga uzluksiz hizmat ko'rsatib kelmoqdamiz.
+                Bundan tashqari bizning restoran 150 ga yaqin doimiy va 300 ga yaqin kunlik mijozlarni qabul qiladi.
+              </p>
+              <div class="text-center">
+                <a href="#about" class="more-btn">Batafsil <i class="bx bx-chevron-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Why Box -->
+
+          <div class="col-lg-8 d-flex align-items-center">
+            <div class="row gy-4">
+
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-clipboard-data"></i>
+                  <h4>Qoniqarli xizmat ko'rsatish</h4>
+                  <p>Hodimlarimiz yuqori malakali bo'libgina qolmay hushmuomala hamdir va bu bizning restoranni muhim odatlaridan biri xisoblanadi</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-gem"></i>
+                  <h4>Yuqori sifatli Mahsulotlar</h4>
+                  <p>Taomlar tarkibidagi barcha maxsulotlar foydalanishdan avval bir necha labaratorik tekshiruvdan o'tkaziladi, shu bilan birga bizdagi hamm mahsultlar 100% organik</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-inboxes"></i>
+                  <h4>Sokin Muhit</h4>
+                  <p>Restoranimizda sokinlik muhiti mavjud, chunki binoga eng yaqin mashina yo'li 300 metr uzoqlikda joylashgan va bu insonga yoqimli tinchlik hissini baxsh etadi.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+
+    <!-- ======= Stats Counter Section ======= -->
+    <section id="stats-counter" class="stats-counter">
+      <div class="container" data-aos="zoom-out">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Kunlik Mijozlar</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Oylik Obunadagi mijozlar</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Pozitiv izohlar</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Hodimlar</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Stats Counter Section -->
+
+
+    <!-- ======= Chefs Section ======= -->
+    <section id="chefs" class="chefs section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Hodimlar</h2>
+          <br>
+          <p>Bizning <span>Professionallar</span></p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="{%static 'assets/img/chefs/chefs-1.jpg'%}" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Bosh oshpaz</span>
+                <p>Walter o'z hayotini oshpazlikka bag'ishlagan professional. U karierasi davomida ko'plab oshpazlik musobaqasida g'alaba qozongan.</p>
+              </div>
+            </div>
+          </div><!-- End Chefs Member -->
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="{%static 'assets/img/chefs/chefs-2.jpg'%}" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Qandolatchi</span>
+                <p>Sarah restoranimizning eng yaxshi qandolatchisi</p>
+              </div>
+            </div>
+          </div><!-- End Chefs Member -->
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="{%static 'assets/img/chefs/chefs-3.jpg'%}" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>Oshpaz</span>
+                <p>William bizning restoranning sodiq ishchilaridan va u oshpazlik lavozimida 12 yildan beri faoliyatini yuritib kelmoqda</p>
+              </div>
+            </div>
+          </div><!-- End Chefs Member -->
+          {%for cheff in cheffs%}
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="{{cheff.img.url}}" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>{{cheff.name}}</h4>
+                <span>{{cheff.role}}</span>
+                <p>{{cheff.text}}</p>
+              </div>
+            </div>
+          </div><!-- End Chefs Member -->
+          {%endfor%}
+
+        </div>
+
+      </div>
+    </section><!-- End Chefs Section -->
+
+    <!-- ======= Book A Table Section ======= -->
+    <section id="book-a-table" class="book-a-table">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Stol buyurtiring</h2>
+          <br>
+          <p><span>Joyni </span>Band qilish</p>
+        </div>
+
+        <div class="row g-0">
+
+          <div class="col-lg-4 reservation-img"  data-aos="zoom-out" data-aos-delay="200"></div>
+
+          <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
+            <form class="form-contact contact_form" method="POST">
+              <br>
+              {% csrf_token %}
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="name">Ism familiyangiz</label>
+                      <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ism, familiya'" placeholder="Ism, familiya" required>
+                  </div>
+              </div>
+              <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                      <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" placeholder="Email">
+                  </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="phone">telefon raqam</label>
+                    <input class="form-control valid" name="phone" id="phone" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telefon'" placeholder="Telefon" required>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="people">Insonlar</label>
+                    <input class="form-control valid" name="people" id="people" type="number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Necha kishi?'" placeholder="Necha kishi?" required>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="date">Sanasi</label>
+                    <input class="form-control valid" name="date" id="date" type="date" onfocus="this.placeholder = ''" onblur="this.placeholder = 'sanasi'" required placeholder="sanasi">
+                </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="time">Vaqti</label>
+                      <input class="form-control valid"  name="time" id="time" type="time" placeholder="vaqti" >
+                  </div>
+                </div>
+            
+                  <div class="col-12">
+                      <div class="form-group">
+                          <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder=" Enter Message"></textarea>
+                      </div>
+                  </div>
+                 
+              </div>
+              <div class="form-group mt-3">
+                  <button type="submit" class="button button-contactForm boxed-btn">Yuborish</button>
+              </div>
+          </form>
+          </div><!-- End Reservation Form -->
+
+        </div>
+
+      </div>
+    </section><!-- End Book A Table Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Gallereya</h2>
+          <br>
+          <p>Bizning <span>Gallereya</span></p>
+        </div>
+
+        <div class="gallery-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{%static 'assets/img/gallery/gallery-1.jpg'%}"><img src="{%static 'assets/img/gallery/gallery-1.jpg'%}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{%static 'assets/img/gallery/gallery-2.jpg'%}"><img src="{%static 'assets/img/gallery/gallery-2.jpg'%}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{%static 'assets/img/gallery/gallery-3.jpg'%}"><img src="{%static 'assets/img/gallery/gallery-3.jpg'%}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{%static 'assets/img/gallery/gallery-4.jpg'%}"><img src="{%static 'assets/img/gallery/gallery-4.jpg'%}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{%static 'assets/img/gallery/gallery-5.jpg'%}"><img src="{%static 'assets/img/gallery/gallery-5.jpg'%}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{%static 'assets/img/gallery/gallery-6.jpg'%}"><img src="{%static 'assets/img/gallery/gallery-6.jpg'%}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{%static 'assets/img/gallery/gallery-7.jpg'%}"><img src="{%static 'assets/img/gallery/gallery-7.jpg'%}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{%static 'assets/img/gallery/gallery-8.jpg'%}"><img src="{%static 'assets/img/gallery/gallery-8.jpg'%}" class="img-fluid" alt=""></a></div>
+            {%for image in images%}
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{{image.img.url}}"><img src="{{image.img.url}}" class="img-fluid" alt=""></a></div>
+            {%endfor%}
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div>
+            <h4>Manzil</h4>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022 - US<br>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>Bog'lanish</h4>
+            <p>
+              <strong>Telefon:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-clock icon"></i>
+          <div>
+            <h4>Ochilish vaqti</h4>
+            <p>
+              <strong>dush-shan: 11:00</strong> - 23:00<br>
+              Yakshanba: Yopiq
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Bizni kuzatib boring</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

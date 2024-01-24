@@ -1,0 +1,107 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block title%}
+<title>Contact</title>
+{%endblock%}
+{%block content%}
+
+    <!-- ======= Contact Section ======= -->
+    <br>
+    <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-header">
+            <p>Savolingiz bormi? <span>Biz bilan bog'laning</span></p>
+          </div>
+  
+          <div class="mb-3">
+            <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+          </div><!-- End Google Maps -->
+  
+          <div class="row gy-4">
+  
+            <div class="col-md-6">
+              <div class="info-item  d-flex align-items-center">
+                <i class="icon bi bi-map flex-shrink-0"></i>
+                <div>
+                  <h3>Manzilimiz</h3>
+                  <p>A108 Adam Street, New York, NY 535022</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+  
+            <div class="col-md-6">
+              <div class="info-item d-flex align-items-center">
+                <i class="icon bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Emailimiz</h3>
+                  <p>contact@example.com</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+  
+            <div class="col-md-6">
+              <div class="info-item  d-flex align-items-center">
+                <i class="icon bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Telefon raqam</h3>
+                  <p>+1 5589 55488 55</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+  
+            <div class="col-md-6">
+              <div class="info-item  d-flex align-items-center">
+                <i class="icon bi bi-share flex-shrink-0"></i>
+                <div>
+                  <h3>Ish vaqti</h3>
+                  <div><strong>dush-Shan:</strong> 11:00 - 23:00;
+                    <strong>Yakshanba:</strong> Yopiq
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+  
+          </div>
+  
+          <form class="form-contact contact_form" method="POST">
+            <br>
+            {% csrf_token %}
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="name">Ism familiyangiz</label>
+                    <input class="form-control valid border-black" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ism, familiya'" placeholder="Ism, familiya" required>
+                </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="phone">telefon raqam</label>
+                  <input class="form-control valid border-black" name="phone" id="phone" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telefon'" placeholder="Telefon" required>
+              </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                    <input class="form-control valid border-black" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" placeholder="Email">
+                </div>
+            </div>
+                <div class="col-12">
+                    <div class="form-group">
+                      <label for="text">Habaringiz:</label>
+                        <textarea class="form-control w-100 border-black" name="text" id="text" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder=" Enter Message"></textarea>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="form-group mt-3">
+                <button type="submit" class="button button-contactForm boxed-btn">Yuborish</button>
+            </div>
+        </form>
+          <!--End Contact Form -->
+  
+        </div>
+      </section>
+      <!-- End Contact Section -->
+
+{%endblock%}
